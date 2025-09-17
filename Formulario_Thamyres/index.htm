@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulário</title>
+  </head>
+  <body>
+    <h1>Formulário de Contato</h1>
+
+
+    <form action="resposta.html" method="POST">
+      <fieldset>
+        <legend> Informações Pessoais:</legend>
+       
+        <!-- Campo para o nome -->
+        <label for="nome">Nome Completo:</label><br />
+        <input type="text" id="nome" name="nome" required /><br /><br />
+       
+        <!-- Campo para data -->
+        <label for="data">Data de Hoje:</label><br />
+        <input type="date" id="data" name="data" value="?= date('Y-m-d'); ?>" required /><br /><br />
+
+
+        <!-- Campo de e-mail -->
+        <label for="email">E-mail:</label><br />
+        <input type="email" id="email" name="email" required /><br /><br />
+
+
+       
+        <label for="senha">Senha:</label><br />
+        <input type="password" id="senha" name="senha" required /><br /><br />
+      </fieldset>
+
+
+      <fieldset>
+        <legend> Pergunta de Multipla escolha</legend>
+       
+        <p>Qual é a sua materia preferida?</p>
+        <input type="radio" id="discipline1" name="disciplina" value="Matemática" />
+        <label for="discipline1">Matemática</label><br />
+       
+        <input type="radio" id="discipline2" name="disciplina" value="Física" />
+        <label for="discipline2">Física</label><br />
+       
+        <input type="radio" id="discipline3" name="disciplina" value="Química" />
+        <label for="discipline3">Química</label><br /><br />
+      </fieldset>
+
+
+      <input type="submit" value="Enviar" />
+    </form>
+  </body>
+</html>
